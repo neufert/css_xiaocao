@@ -9,35 +9,67 @@
     <style type="text/css">
         body{
             margin: 0;
+            background-color: #eff0f4;
         }
         header{
             background-color: #5fc0cd;
             width: 100vw; height: 3.2rem;
             color: white;
-        }
-        .fixed-center{
-            text-align: center;
-            padding: 1rem 0 0 0;
-        }
-        .fixed-left{
             position: fixed;
-            top: 1rem;
-            left: 1rem;
+            top: 0; left: 0;
         }
-        .fixed-right{
-            position: fixed;
-            top: 1rem;
-            right: 1rem;
+        ul{
+            padding: 0 3vw;
+            margin: 1rem 0 0 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+        .row-spacebetween{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        input{
+            border: 0;
+            width: 100%;
+            height: 3rem;
+            margin: 1vh 0;
+        }
+        button{
+            background-color: #5fc0cd;
+            width: 100%;
+            height: 3rem;
+            margin: 1vh 0;
+            border: 0;
+        }
+        .login{
+            margin-top: 3.6rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div>
-            <div class="fixed-center">登陆</div>
-            <div class="fixed-right">关闭</div>
-            <div class="fixed-left">注册</div>
+    <div class="column">
+        <header>
+            <ul class="row-spacebetween">
+                <li>注册</li>
+                <li>登陆</li>
+                <li>关闭</li>
+            </ul>
+        </header>
+        <div class="login">
+            <div>
+                <input type="text"/>
+            </div>
+            <div>
+                <input type="text"/>
+            </div>
+            <button></button>
         </div>
-    </header>
+    </div>
 </body>
 </html>
