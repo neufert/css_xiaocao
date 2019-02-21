@@ -19,7 +19,7 @@
             top: 0; left: 0;
         }
         ul{
-            padding: 0 3vw;
+            padding: 0 25px;
             margin: 1rem 0 0 0;
         }
         li{
@@ -29,16 +29,21 @@
             display: flex;
             flex-direction: column;
         }
-        .row-spacebetween{
+        .space-between{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
-        input{
-            border: 0;
-            width: 100%;
-            height: 3rem;
-            margin: 1vh 0;
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
+        .login{
+            height:3rem;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            background-color: white;
+            width: 100vw;
         }
         button{
             background-color: #5fc0cd;
@@ -46,29 +51,65 @@
             height: 3rem;
             margin: 1vh 0;
             border: 0;
+            font-size: 1rem;
         }
-        .login{
+        .container1{
             margin-top: 3.6rem;
+        }
+        img{
+            height: 20px; width: auto;
+            margin: 0 25px;
+            flex-shrink: 0;
+        }
+        input{
+            border: 0;
+            border-left: gainsboro 1px solid;
+            padding-left: 25px;
+            background-color: white;
+            height: 1rem;
+            flex: 0 0 100%;
+        }
+        ::placeholder{
+            color: #e5e8ea;
+        }
+        button{
+            border:0;
+            height:3rem;
+            background-color: #5fc0cd;
+            color: white;
+            margin-top: 1.5rem;
+        }
+        .right{
+            color: #5fc0cd;
+            margin: 0;
+            padding: 0 25px;
+            text-align: right;
+        }
+        .bold{
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="column">
         <header>
-            <ul class="row-spacebetween">
-                <li>注册</li>
-                <li>登陆</li>
+            <ul class="space-between">
                 <li>关闭</li>
+                <li class="bold">登陆</li>
+                <li>注册</li>
             </ul>
         </header>
-        <div class="login">
-            <div>
-                <input type="text"/>
+        <div class="container1 column">
+            <div class="row login">
+                <img src=".\img\iphone.png">
+                <input type="text" placeholder="请输入手机号">
             </div>
-            <div>
-                <input type="text"/>
+            <div class="row login">
+                <img src=".\img\locked.png">
+                <input type="text" placeholder="请输入密码">
             </div>
-            <button></button>
+            <button class="bold">登陆</button>
+            <a class="right">忘记密码？</a>
         </div>
     </div>
 </body>
