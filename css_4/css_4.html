@@ -66,9 +66,13 @@
             border-left: gainsboro 1px solid;
             padding-left: 25px;
             background-color: white;
-            height: 1rem;
-            flex: 0 0 100%;
+            height: 1rem; width: 80%;
             outline: none;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
         ::placeholder{
             color: #e5e8ea;
@@ -101,14 +105,14 @@
             </ul>
         </header>
         <div class="container1 column">
-            <div class="row login">
+            <form class="row login">
                 <img src=".\img\iphone.png">
-                <input type="text" placeholder="请输入手机号">
-            </div>
-            <div class="row login">
+                <input type="text" oninput = "value=value.replace(/[^\d]/g,'')" placeholder="请输入手机号" maxlength="11">
+            </form>
+            <form class="row login">
                 <img src=".\img\locked.png">
-                <input type="text" placeholder="请输入密码">
-            </div>
+                <input type="password" placeholder="请输入密码" maxlength="20">
+            </form>
             <button class="bold">登陆</button>
             <a class="right">忘记密码？</a>
         </div>
