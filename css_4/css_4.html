@@ -103,15 +103,22 @@
         <div class="container1 column">
             <div class="row login">
                 <img src=".\img\iphone.png">
-                <input type="text" placeholder="请输入手机号">
+                <input type="number" id="myInput" placeholder="请输入手机号">
             </div>
             <div class="row login">
                 <img src=".\img\locked.png">
-                <input type="text" placeholder="请输入密码">
+                <input type="password" placeholder="请输入密码" maxlength="20">
             </div>
             <button class="bold">登陆</button>
             <a class="right">忘记密码？</a>
         </div>
     </div>
 </body>
+<script>
+    myInput.oninput = function () {
+        if (this.value.length > 11) {
+            this.value = this.value.slice(0,11);
+        }
+    }
+</script>
 </html>
