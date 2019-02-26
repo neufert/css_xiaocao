@@ -13,7 +13,7 @@
         header{
             background-color: #5fc0cd;
             width: 100vw; height: 3rem;
-            position: fixed; top: 0; left: 0;
+            position: fixed; top: 0;
             display: flex; justify-content: center; align-items: center;
             color: white;
         }
@@ -32,67 +32,141 @@
             background-repeat:no-repeat;
         }
         .container3{
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            width: 100vw; height: 40vh;
-            margin: 0 2rem;
+            width: 100vw; height: 50vh;
         }
         .block{
             display: flex;
+            align-items: center;
             flex-direction: row;
             flex:1;
+            padding-left: 2rem;
+            border-top: #e1e5e7 solid 1px;
         }
         .block-left{
             width: 5rem;
         }
+        .block-topleft{
+            width: 4rem;
+        }
         .block-right{
             color: black;
-            border-left: black solid 1px;
+            border-left: #e1e5e7 solid 1px;
             padding-left: 1rem;
+        }
+        .high{
+            flex:2;
         }
         footer{
             background-color: #eff0f4;
             width: 100vw; height: 3rem;
-            position: fixed; left: 0; bottom: 0;
+            position: fixed; bottom: 0;
         }
-        button{
+        .button-left{
             flex:1;
-        }
-        p{
-            margin: 0;
+            background-color: #5fc0cd;
+            margin: 0 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 10px;
         }
         .row{
             display: flex;
             flex-direction: row;
         }
+        .space-between{
+            justify-content: space-between;
+        }
+        .full-width{
+            width: 100%;
+            text-align: center;
+        }
+        .bottom{
+            width: 65%;
+        }
+        header img{
+            height: 15px;
+            margin-left: 1rem;
+        }
+        img[src="./img/star.png"]{
+            width: 20px;
+            height: 20px;
+            padding-right: 0.2rem;
+        }
+        .blueborder{
+            border-left: #5fc0cd solid 2px;
+            padding-left: 1rem;
+            margin-left: -1rem;
+        }
+        .photo{
+            width: 100px;
+            height: auto;
+            background-color: #efefef;
+            border-radius: 50%;
+        }
+        .user{
+            align-self: center;
+            margin-left: 1rem;
+            color: white;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+        img[src="./img/location.png"]{
+            width: 10px;
+            height: auto;
+            margin-bottom: 3px;
+        }
+        .font-normal{
+            margin-bottom: 0.5rem;
+        }
+        .font-small{
+            font-size: 0.8rem;
+            margin-left: 0.4rem;
+        }
     </style>
 </head>
 <body>
-    <header>
-        个人主页
+    <header class="row space-between">
+        <img src="./img/back.png" alt="">
+        <div class="full-width">个人主页</div>
     </header>
     <div class="container2">
-
+        <div class="row user">
+            <div>
+                <img class="photo" src="./img/user.png" alt="">
+            </div>
+            <div class="column user">
+                <div class="font-normal">
+                    高素雅 51岁
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="./img/location.png" alt="">
+                    </div>
+                    <div class="font-small">北京，通州，果园</div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container3">
         <div class="row block">
-            专业技能
+            <div class="blueborder">专业技能</div>
         </div>
         <div class="row block">
-            <p class="block-left">
-                住家
-            </p>
-            <p class="block-right">
-                不含餐
-            </p>
-        </div>
-        <div class="row block">
-            <p class="block-left">
-                从业年限
-            </p>
-            <p class="block-right">
-                1年
-            </p>
+            <div class="row block-topleft">
+                <img src="./img/star.png" alt="">
+                <div>住家</div>
+            </div>
+            <div class="row block-right">
+                <img src="./img/star.png" alt="">
+                <div>不含餐</div>
+            </div>
         </div>
         <div class="row block">
             <p class="block-left">
@@ -107,21 +181,45 @@
                 从业年限
             </p>
             <p class="block-right">
-                1年
+                0-3年
             </p>
         </div>
         <div class="row block">
             <p class="block-left">
-                从业年限
+                工作时间
             </p>
             <p class="block-right">
-                1年灰灰阿海珐i风格发挥给覅是回佛山分行卡号是地方烦烦烦发海景哈哈哈哈哈哈
+                全天
+            </p>
+        </div>
+        <div class="row block">
+            <p class="block-left">
+                服务价格
+            </p>
+            <p class="block-right">
+                25元/小时
+            </p>
+        </div>
+        <div class="row block high">
+            <p class="block-left">
+                自我介绍
+            </p>
+            <p class="block-right bottom">
+                可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。
             </p>
         </div>
     </div>
     <footer class="container1">
-        <button>li</button>
-        <button>li</button>
+        <div class="button-left">
+            <div>
+                留言
+            </div>
+        </div>
+        <div class="button-right">
+            <div>
+                电话联系
+            </div>
+        </div>
     </footer>
 </body>
 </html>
