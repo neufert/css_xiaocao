@@ -20,6 +20,7 @@
         .container1{
             display: flex;
             flex-direction: row;
+            height: 3rem;
         }
         .container2{
             display: flex;
@@ -28,6 +29,7 @@
             width: 100vw;
             height: 30vh;
             background-image: url("./img/bg.png");
+            min-width: 320px;
             background-size: 100%;
             background-repeat:no-repeat;
         }
@@ -47,6 +49,7 @@
         }
         .block-left{
             width: 5rem;
+            color: #999999;
         }
         .block-topleft{
             width: 4rem;
@@ -60,19 +63,25 @@
             flex:2;
         }
         footer{
-            background-color: #eff0f4;
             width: 100vw; height: 3rem;
             position: fixed; bottom: 0;
         }
-        .button-left{
+        .button{
             flex:1;
-            background-color: #5fc0cd;
-            margin: 0 0.2rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 5px;
+        }
+        .button-left{
+            color: #5fc0cd;
+            border: #5fc0cd solid 1px;
+            margin: 0 0.3rem 0 1rem;
+        }
+        .button-right{
+            background-color: #5fc0cd;
             color: white;
-            border-radius: 10px;
+            margin: 0 1rem 0 0.3rem;
         }
         .row{
             display: flex;
@@ -86,15 +95,15 @@
             text-align: center;
         }
         .bottom{
-            width: 65%;
+            width: 60%;
         }
         header img{
             height: 15px;
             margin-left: 1rem;
         }
         img[src="./img/star.png"]{
-            width: 20px;
-            height: 20px;
+            width: 12px;
+            height: auto;
             padding-right: 0.2rem;
         }
         .blueborder{
@@ -120,14 +129,21 @@
         img[src="./img/location.png"]{
             width: 10px;
             height: auto;
-            margin-bottom: 3px;
         }
         .font-normal{
             margin-bottom: 0.5rem;
+            font-size: 1.2rem;
         }
         .font-small{
             font-size: 0.8rem;
             margin-left: 0.4rem;
+        }
+        .align-center{
+            align-self: center;
+        }
+        .red{
+            color: #e26163;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -143,11 +159,18 @@
             </div>
             <div class="column user">
                 <div class="font-normal">
-                    高素雅 51岁
+                    <div class="row space-between">
+                        <div>
+                            高素雅
+                        </div>
+                        <div>
+                            51岁
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div>
-                        <img src="./img/location.png" alt="">
+                        <img class="align-center" src="./img/location.png" alt="">
                     </div>
                     <div class="font-small">北京，通州，果园</div>
                 </div>
@@ -160,11 +183,15 @@
         </div>
         <div class="row block">
             <div class="row block-topleft">
-                <img src="./img/star.png" alt="">
+                <div class="row">
+                    <img class="align-center" src="./img/star.png" alt="">
+                </div>
                 <div>住家</div>
             </div>
             <div class="row block-right">
-                <img src="./img/star.png" alt="">
+                <div class="row">
+                    <img class="align-center" src="./img/star.png" alt="">
+                </div>
                 <div>不含餐</div>
             </div>
         </div>
@@ -173,15 +200,7 @@
                 从业年限
             </p>
             <p class="block-right">
-                1年
-            </p>
-        </div>
-        <div class="row block">
-            <p class="block-left">
-                从业年限
-            </p>
-            <p class="block-right">
-                0-3年
+                0~3年
             </p>
         </div>
         <div class="row block">
@@ -196,7 +215,7 @@
             <p class="block-left">
                 服务价格
             </p>
-            <p class="block-right">
+            <p class="block-right red">
                 25元/小时
             </p>
         </div>
@@ -209,15 +228,17 @@
             </p>
         </div>
     </div>
-    <footer class="container1">
-        <div class="button-left">
-            <div>
-                留言
+    <footer>
+        <div class="container1">
+            <div class="button button-left">
+                <div>
+                    留言
+                </div>
             </div>
-        </div>
-        <div class="button-right">
-            <div>
-                电话联系
+            <div class="button button-right">
+                <div>
+                    电话联系
+                </div>
             </div>
         </div>
     </footer>
