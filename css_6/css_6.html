@@ -74,14 +74,25 @@
             display: flex;
             flex-direction: row;
             width: 8rem;
+            background-color: #55a8b3;
+            border-radius: 5px;
         }
         .check-on-1{
             width: 4rem;
+            height: 2rem;
             background-color: #55a8b3;
+            border-radius: 5px;
         }
         .check-on-2{
             width: 4rem;
+            height: 2rem;
             background-color: white;
+            border-radius: 5px;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         input[type="checkbox"]{
             -webkit-appearance: none;
@@ -124,8 +135,8 @@
         <div>
             <input type="checkbox" class="row" id="switch">
             <label for="switch" class="check-on">
-                <div class="check-on-1">找护工</div>
-                <div class="check-on-2">找雇主</div>
+                <div class="check-on-1 center">找护工</div>
+                <div class="check-on-2 center">找雇主</div>
             </label>
         </div>
         <span class="icon-map"></span>
