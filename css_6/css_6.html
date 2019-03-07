@@ -9,6 +9,21 @@
     <style type="text/css">
         body{
             margin: 0;
+            color: #afbac0;
+        }
+        .text-black{
+            color: #000000;
+            font-weight: bold;
+        }
+        .text-red{
+            color: #e63b0e;
+            font-weight: bold;
+        }
+        .text-blue{
+            color: #5fc0cd;
+        }
+        .text-small{
+            font-size: 0.7rem;
         }
         .header1{
             position: fixed;
@@ -26,49 +41,75 @@
             flex-direction: row;
             top: 8%;
             width: 100%;
-            height: 8vh;
-            border-bottom: #999999 solid 1px;
+            height: 6vh;
+            border-bottom: #e1e5e7 solid 0.5px;
         }
         .select{
             flex: 1;
-            border: #999999 solid 0.5px;
+            border: #e1e5e7 solid 0.5px;
+            justify-content: center;
+            align-items: center;
         }
         .list{
             display: flex;
             flex-direction: column;
-            margin-top: 16vh;
+            margin-top: 14vh;
         }
         .list-1{
             display: flex;
             flex-direction: column;
-            border-bottom: #999999 solid 1px;
-            width: 100%;
-            height: 16vh;
+            padding: 8px;
+            border-bottom: #e1e5e7 solid 1px;
+            height: 14vh;
+        }
+        .list-1 .space-between{
+            margin-left: 30px;
+        }
+        .list-1 > .row{
+            flex: 1;
         }
         .row{
             display: flex;
             flex-direction: row;
-            flex: 1;
             align-items: center;
         }
+        .column{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         .space-between{
-            margin-left: 30px;
-            width: 80%;
             justify-content: space-between;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 8vh;
+            width: 33vw;
+            line-height: 2rem;
+            background-color: #e1e5e7;
+            color: #999999;
+        }
+        .select.row:hover .dropdown-content{
+            display: block;
         }
         footer{
             position: fixed;
+            display: flex;
+            flex-direction: row;
             bottom: 0;
             width: 100%;
-            height: 10%;
+            height: 10vh;
             background-color: #eff0f4;
+            text-align: center;
         }
-
-        input[type="checkbox"]:checked + .check-on .check-on-1{
+        input[type="checkbox"]:checked+.check-on .check-on-1{
             background-color: white;
+            color: #5fc0cd;
         }
-        input[type="checkbox"]:checked + .check-on .check-on-2{
+        input[type="checkbox"]:checked+.check-on .check-on-2{
             background-color: #55a8b3;
+            color: #ffffff;
         }
         .check-on{
             display: flex;
@@ -80,14 +121,16 @@
         .check-on-1{
             width: 4rem;
             height: 2rem;
-            background-color: #55a8b3;
             border-radius: 5px;
+            background-color: #55a8b3;
+            color: #ffffff;
         }
         .check-on-2{
             width: 4rem;
             height: 2rem;
-            background-color: white;
             border-radius: 5px;
+            background-color: #ffffff;
+            color: #5fc0cd;
         }
         .center{
             display: flex;
@@ -121,11 +164,39 @@
             background-position: 0 -60px;
         }
         .icon-arrow{
-            position: fixed;
-            right: 0;
             width: 30px;
             height: 30px;
             background-position: 0 -180px;
+        }
+        .icon-dropdown{
+            width: 30px;
+            height: 30px;
+            background-position: 0 -210px;
+        }
+        .icon-home{
+            width: 30px;
+            height: 30px;
+            background-position: 0 -90px;
+        }
+        .icon-pen{
+            width: 30px;
+            height: 30px;
+            background-position: 0 -120px;
+        }
+        .icon-pen-border{
+            margin: 0 10vh;
+            height: 9.5vh;
+            width: 9.5vh;
+            background-color: #5fc0cd;
+            border-radius: 50%;
+        }
+        .icon-me{
+            width: 30px;
+            height: 30px;
+            background-position: 0 -150px;
+        }
+        .invisible{
+            width: 30px;
         }
 
     </style>
@@ -135,35 +206,129 @@
         <div>
             <input type="checkbox" class="row" id="switch">
             <label for="switch" class="check-on">
-                <div class="check-on-1 center">找护工</div>
-                <div class="check-on-2 center">找雇主</div>
+                <div class="check-on-1 center">找雇主</div>
+                <div class="check-on-2 center">找护工</div>
             </label>
         </div>
         <span class="icon-map"></span>
     </header>
-
     <div class="header2">
-        <div class="select">
 
+        <div class="select row space-between">
+            <div class="invisible"></div>
+            <div>所在地</div>
+            <span class="icon-dropdown"></span>
+            <div class="dropdown-content">
+                <div>1</div>
+                <div>2</div>
+            </div>
         </div>
-        <div class="select">
 
+        <div class="select row space-between">
+            <div class="invisible"></div>
+            <div>食宿</div>
+            <span class="icon-dropdown"></span>
+            <div class="dropdown-content">
+                <div>1</div>
+                <div>2</div>
+            </div>
         </div>
-        <div class="select">
 
+        <div class="select row space-between">
+            <div class="invisible"></div>
+            <div>病人情况</div>
+            <span class="icon-dropdown"></span>
+            <div class="dropdown-content">
+                <div>1</div>
+                <div>2</div>
+            </div>
         </div>
     </div>
-
     <div class="list">
+
         <div class="list-1">
             <div class="row">
                 <span class="icon-calender"></span>
                 <div>服务日期</div>
             </div>
             <div class="row space-between">
-                <div>2015-7-5 至 2015-7-12</div>
-                <div>25元/小时</div>
-                <span class="icon-arrow"></span>
+                <div class="text-black">2015-7-5 至 2015-7-12</div>
+                <div class="row">
+                    <div class="text-red">25元/小时</div>
+                    <span class="icon-arrow"></span>
+                </div>
+            </div>
+            <div class="row">
+                <span class="icon-location"></span>
+                <div>北京.通州.果园</div>
+            </div>
+        </div>
+
+        <div class="list-1">
+            <div class="row">
+                <span class="icon-calender"></span>
+                <div>服务日期</div>
+            </div>
+            <div class="row space-between">
+                <div class="text-black">2015-7-5 至 2015-7-12</div>
+                <div class="row">
+                    <div class="text-red">35元/小时</div>
+                    <span class="icon-arrow"></span>
+                </div>
+            </div>
+            <div class="row">
+                <span class="icon-location"></span>
+                <div>北京.通州.果园</div>
+            </div>
+        </div>
+
+        <div class="list-1">
+            <div class="row">
+                <span class="icon-calender"></span>
+                <div>服务日期</div>
+            </div>
+            <div class="row space-between">
+                <div class="text-black">2015-7-5 至 2015-7-12</div>
+                <div class="row">
+                    <div class="text-red">45元/小时</div>
+                    <span class="icon-arrow"></span>
+                </div>
+            </div>
+            <div class="row">
+                <span class="icon-location"></span>
+                <div>北京.通州.果园</div>
+            </div>
+        </div>
+
+        <div class="list-1">
+            <div class="row">
+                <span class="icon-calender"></span>
+                <div>服务日期</div>
+            </div>
+            <div class="row space-between">
+                <div class="text-black">2015-7-5 至 2015-7-12</div>
+                <div class="row">
+                    <div class="text-red">45元/小时</div>
+                    <span class="icon-arrow"></span>
+                </div>
+            </div>
+            <div class="row">
+                <span class="icon-location"></span>
+                <div>北京.通州.果园</div>
+            </div>
+        </div>
+
+        <div class="list-1">
+            <div class="row">
+                <span class="icon-calender"></span>
+                <div>服务日期</div>
+            </div>
+            <div class="row space-between">
+                <div class="text-black">2015-7-5 至 2015-7-12</div>
+                <div class="row">
+                    <div class="text-red">45元/小时</div>
+                    <span class="icon-arrow"></span>
+                </div>
             </div>
             <div class="row">
                 <span class="icon-location"></span>
@@ -172,8 +337,20 @@
         </div>
 
     </div>
-
-    <footer class="footer">
+    <footer class="footer center">
+        <div class="column">
+            <span class="icon-home"></span>
+            <div class="text-blue text-small">首页</div>
+        </div>
+        <div class="column">
+            <div class="icon-pen-border center">
+                <span class="icon-pen"></span>
+            </div>
+        </div>
+        <div class="column">
+            <span class="icon-me"></span>
+            <div class="text-small">我的</div>
+        </div>
     </footer>
 </body>
 </html>
