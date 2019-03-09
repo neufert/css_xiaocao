@@ -14,8 +14,13 @@
         .text-black{
             color: #000000;
             font-weight: bold;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
         }
         .text-red{
+            width: 5rem;
+            margin-left: 20vw;
             color: #e63b0e;
             font-weight: bold;
         }
@@ -23,7 +28,7 @@
             color: #5fc0cd;
         }
         .text-small{
-            font-size: 0.7rem;
+            font-size: .7rem;
         }
         .header1{
             position: fixed;
@@ -42,11 +47,11 @@
             top: 8%;
             width: 100%;
             height: 6vh;
-            border-bottom: #e1e5e7 solid 0.5px;
+            border-bottom: #e1e5e7 solid .5px;
         }
         .select{
             flex: 1;
-            border: #e1e5e7 solid 0.5px;
+            border: #e1e5e7 solid .5px;
             justify-content: center;
             align-items: center;
         }
@@ -54,12 +59,13 @@
             display: flex;
             flex-direction: column;
             margin-top: 14vh;
+            height: 76vh;
         }
         .list-1{
             display: flex;
             flex-direction: column;
             padding: 8px;
-            border-bottom: #e1e5e7 solid 1px;
+            border-bottom: #e1e5e7 solid .5px;
             height: 14vh;
         }
         .list-1 .space-between{
@@ -86,9 +92,14 @@
             position: absolute;
             top: 6vh;
             width: 33vw;
-            line-height: 2rem;
-            background-color: #e1e5e7;
-            color: #999999;
+            border: #e1e5e7 solid .5px;
+            background-color: #ffffff;
+            color: #afbac0;
+        }
+        .dropdown-content-list{
+            width: 100%;
+            height: 2rem;
+            border-bottom: #e1e5e7 solid .5px;
         }
         .select.row:hover .dropdown-content{
             display: block;
@@ -185,8 +196,8 @@
         }
         .icon-pen-border{
             margin: 0 10vh;
-            height: 9.5vh;
-            width: 9.5vh;
+            height: 9vh;
+            width: 9vh;
             background-color: #5fc0cd;
             border-radius: 50%;
         }
@@ -219,8 +230,9 @@
             <div>所在地</div>
             <span class="icon-dropdown"></span>
             <div class="dropdown-content">
-                <div>1</div>
-                <div>2</div>
+                <div class="dropdown-content-list center">北京</div>
+                <div class="dropdown-content-list center">河南</div>
+                <div class="dropdown-content-list center">湖北</div>
             </div>
         </div>
 
@@ -229,8 +241,8 @@
             <div>食宿</div>
             <span class="icon-dropdown"></span>
             <div class="dropdown-content">
-                <div>1</div>
-                <div>2</div>
+                <div class="dropdown-content-list center">是</div>
+                <div class="dropdown-content-list center">否</div>
             </div>
         </div>
 
@@ -239,8 +251,8 @@
             <div>病人情况</div>
             <span class="icon-dropdown"></span>
             <div class="dropdown-content">
-                <div>1</div>
-                <div>2</div>
+                <div class="dropdown-content-list center">能自理</div>
+                <div class="dropdown-content-list center">不能自理</div>
             </div>
         </div>
     </div>
@@ -254,7 +266,7 @@
             <div class="row space-between">
                 <div class="text-black">2015-7-5 至 2015-7-12</div>
                 <div class="row">
-                    <div class="text-red">25元/小时</div>
+                    <div class="text-red center">25元/小时</div>
                     <span class="icon-arrow"></span>
                 </div>
             </div>
@@ -272,7 +284,7 @@
             <div class="row space-between">
                 <div class="text-black">2015-7-5 至 2015-7-12</div>
                 <div class="row">
-                    <div class="text-red">35元/小时</div>
+                    <div class="text-red center">35元/小时</div>
                     <span class="icon-arrow"></span>
                 </div>
             </div>
@@ -290,7 +302,7 @@
             <div class="row space-between">
                 <div class="text-black">2015-7-5 至 2015-7-12</div>
                 <div class="row">
-                    <div class="text-red">45元/小时</div>
+                    <div class="text-red center">45元/小时</div>
                     <span class="icon-arrow"></span>
                 </div>
             </div>
@@ -308,7 +320,7 @@
             <div class="row space-between">
                 <div class="text-black">2015-7-5 至 2015-7-12</div>
                 <div class="row">
-                    <div class="text-red">45元/小时</div>
+                    <div class="text-red center">45元/小时</div>
                     <span class="icon-arrow"></span>
                 </div>
             </div>
@@ -326,7 +338,7 @@
             <div class="row space-between">
                 <div class="text-black">2015-7-5 至 2015-7-12</div>
                 <div class="row">
-                    <div class="text-red">45元/小时</div>
+                    <div class="text-red center">45元/小时</div>
                     <span class="icon-arrow"></span>
                 </div>
             </div>
