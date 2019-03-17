@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发言讨论结束，投票</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0;
+            background-color: #5fc0cd;
+        }
+        header{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            width: 100%;
+            color: #ffffff;
+        }
+        .header-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
+        }
+        .header-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #b9e9f5;
+            color: #565656;
+            height: 6vh;
+        }
+        .header-2-1{
+            margin-left: 5%;
+        }
+        .header-2-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 40px;
+            height: 4vh;
+            width: 4vh;
+            border-radius: 2vh;
+            background-color: #fbb435;
+        }
+        .right-arrow{
+            width: 0;
+            height: 0;
+            margin-left: .5vh;
+            border-top: 1.2vh solid transparent;
+            border-left: 2vh solid #ffffff;
+            border-bottom: 1.2vh solid transparent;
+        }
+        .header-2-3{
+            margin-left: 10%;
+            margin-top: -5px;
+            color: #b9e9f5;
+        }
+        .header-2-4{
+            margin-left: 5%;
+            height: 4vh;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5%;
+            width: 30px;
+            border: .3vh solid #ffffff;
+        }
+        .menu>div{
+            margin: 3px;
+            width: 20px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+        .main{
+            margin-top: 25vh;
+            margin-left: 5%;
+            width: 95%;
+            height: 60vh;
+            overflow-y: scroll;
+        }
+        .main-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 95%;
+            margin-bottom: 50px;
+        }
+        ::-webkit-scrollbar{px
+            width: 2px;
+            height: 120px;
+        }
+        ::-webkit-scrollbar-track{
+            border-radius: 1vw;
+            background-color: #565656;
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius:10px;
+            background-color: #ffffff;
+        }
+        .main-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 25vw;
+            height: 25vw;
+            border: #ffffff solid 3px;
+        }
+        .main-row-block:hover .main-1-invisible{
+            display: flex;
+        }
+        .main-1-invisible{
+            display: none;
+            position: relative;
+            margin-top: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25vw;
+        }
+        .main-row-block img{
+            width: 12px;
+            height: 12px;
+            border: 1px #ffffff solid;
+            background-color: #ffffff;
+        }
+        .main-1-invisible-2{
+            display: none;
+            position: relative;
+            margin-top: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25vw;
+        }
+        .main-row-block:hover .main-1-invisible-2{
+            display: flex;
+        }
+        .main-1-invisible-3{
+            display: none;
+            position: relative;
+            margin-top: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25vw;
+        }
+        .main-row-block:hover .main-1-invisible-3{
+            display: flex;
+        }
+        .main-1-1{
+            flex: 4;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #f5c97b;
+            color: #565656;
+        }
+        .main-1-2{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #83b09a;
+            color: #ffffff;
+        }
+        .footer{
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            width: 95%;
+            height: 15vh;
+            border-top: #ffffff 1px solid;
+            background-color: #5fc0cd;
+        }
+        .submit{
+            box-sizing: border-box;
+            width: 70%;
+            background-color: #ffa500;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-1">
+            <div class="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>投票</div>
+            <div>x</div>
+        </div>
+        <div class="header-2">
+            <div class="header-2-1">
+                发言讨论结束，请大家投票
+            </div>
+            <div class="header-2-2">
+                <div class="right-arrow"></div>
+            </div>
+        </div>
+        <div class="header-2-3">
+            <div>▼</div>
+        </div>
+        <div class="header-2-4">
+            点击得票数最多人的头像
+        </div>
+
+    </header>
+    <div class="main">
+        <div class="main-row">
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main-row">
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-2">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-2">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-2">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main-row">
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-3">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-3">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-3">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main-row">
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-3">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-3">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+            <div class="main-row-block">
+                <div class="main-1">
+                    <div class="main-1-1">水民</div>
+                    <div class="main-1-2">1</div>
+                </div>
+                <div class="main-1-invisible-3">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="submit">
+            投死
+        </div>
+    </div>
+</body>
+</html>
