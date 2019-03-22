@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏结果</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 10vh;
+            border-bottom: solid .2px #ffffff;
+            background-color: #55a8b3;
+            color: #ffffff;
+            padding: 0 5vw;
+            font-size: 1.5rem;
+        }
+        img[src=".\img\home.png"]{
+            height: 50%;
+            width: auto;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10vh;
+        }
+        .main-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 55vh;
+            width: 100%;
+            background-color: #55a8b3;
+        }
+        .main-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 15vh;
+            width: 100%;
+            padding: 2% 0;
+            border-bottom: 1px solid #999999;
+        }
+        .main-2-1{
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            color: #7d7d7d;
+        }
+        .main-2-1-1{
+            font-size: 1.2rem;
+        }
+        .main-2-1-2{
+            font-size: 0.8rem;
+        }
+        .main-2-2{
+            width: 80%;
+            flex: 1;
+            color: #a6a6a6;
+        }
+        .text-yellow{
+            width: 70%;
+            color: orange;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: justify;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            height: 12vh;
+            background-color: rgba(0, 0, 0, 0.5)
+        }
+        .button{
+            box-sizing: border-box;
+            width: 40%;
+            max-height: 10vh;
+            padding: .6rem;
+            margin: 0 5%;
+            border-radius: 10px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+        .red{
+            background-color: #e26163;
+        }
+        .orange{
+            background-color: #fbb435;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src=".\img\home.png" alt="">
+        <div>游戏结果</div>
+        <img src=".\img\6.png" alt="">
+    </header>
+
+    <main>
+        <div class="main-1">
+            <img src=".\img\5.png" alt="">
+            <div class="text-yellow">
+                太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！
+            </div>
+        </div>
+
+        <div class="main-2">
+            <div class="main-2-1">
+                <div class="main-2-1-1">
+                    第1天
+                </div>
+                <div class="main-2-1-2">
+                    0小时07分
+                </div>
+            </div>
+            <div class="main-2-2">
+                晚上：5号被杀手杀死，5号是水民
+            </div>
+            <div class="main-2-2">
+                白天：8号被全民投票投死，8号是杀手
+            </div>
+        </div>
+
+        <div class="main-2">
+            <div class="main-2-1">
+                <div class="main-2-1-1">
+                    第2天
+                </div>
+                <div class="main-2-1-2">
+                    0小时07分
+                </div>
+            </div>
+            <div class="main-2-2">
+                晚上：5号被杀手杀死，5号是水民
+            </div>
+            <div class="main-2-2">
+                白天：8号被全民投票投死，8号是杀手
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="button red">
+            再来一局
+        </div>
+        <div class="button orange">
+            上传并分享
+        </div>
+    </footer>
+
+</body>
+</html>
