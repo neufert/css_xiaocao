@@ -12,7 +12,7 @@
             flex-direction: row;
             justify-content: center;
             margin: 0;
-            background-color: #5fc0cd;
+            background-color: #29bde0;
         }
         header{
             position: fixed;
@@ -47,7 +47,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            margin-right: 40px;
+            margin-right: 5%;
             height: 4vh;
             width: 4vh;
             border-radius: 2vh;
@@ -99,12 +99,12 @@
             margin-bottom: 50px;
         }
         ::-webkit-scrollbar{px
-            width: 2px;
+            width: 1px;
             height: 120px;
         }
         ::-webkit-scrollbar-track{
             border-radius: 1vw;
-            background-color: #565656;
+            background-color: #4aa1c8;
         }
         ::-webkit-scrollbar-thumb{
             border-radius:10px;
@@ -189,7 +189,7 @@
             width: 95%;
             height: 15vh;
             border-top: #ffffff 1px solid;
-            background-color: #5fc0cd;
+            background-color: #29bde0;
         }
         .submit{
             box-sizing: border-box;
@@ -199,7 +199,16 @@
             padding: 1rem;
             text-align: center;
         }
+        a:-webkit-any-link {
+            text-decoration: none;
+        audio{
+            display: block;
+        }
     </style>
+    <script>
+        var audio = new Audio();
+        audio.src = "./img/audio.mp3"
+    </script>
 </head>
 <body>
     <header>
@@ -217,7 +226,7 @@
                 发言讨论结束，请大家投票
             </div>
             <div class="header-2-2">
-                <div class="right-arrow"></div>
+                <a href="#" class="right-arrow" onmousedown="audio.play()"></a>
             </div>
         </div>
         <div class="header-2-3">
@@ -233,7 +242,7 @@
             <div class="main-row-block">
                 <div class="main-1">
                     <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-2">1号</div>
                 </div>
                 <div class="main-1-invisible">
                     <img src="./img/1.png" alt="">
@@ -245,7 +254,7 @@
             <div class="main-row-block">
                 <div class="main-1">
                     <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-2">2号</div>
                 </div>
                 <div class="main-1-invisible">
                     <img src="./img/1.png" alt="">
@@ -256,8 +265,8 @@
             </div>
             <div class="main-row-block">
                 <div class="main-1">
-                    <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-1">警察</div>
+                    <div class="main-1-2">3号</div>
                 </div>
                 <div class="main-1-invisible">
                     <img src="./img/1.png" alt="">
@@ -270,8 +279,8 @@
         <div class="main-row">
             <div class="main-row-block">
                 <div class="main-1">
-                    <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-1">法官</div>
+                    <div class="main-1-2">4号</div>
                 </div>
                 <div class="main-1-invisible-2">
                     <img src="./img/1.png" alt="">
@@ -282,8 +291,8 @@
             </div>
             <div class="main-row-block">
                 <div class="main-1">
-                    <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-1">狙击手</div>
+                    <div class="main-1-2">5号</div>
                 </div>
                 <div class="main-1-invisible-2">
                     <img src="./img/1.png" alt="">
@@ -294,8 +303,8 @@
             </div>
             <div class="main-row-block">
                 <div class="main-1">
-                    <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-1">医生</div>
+                    <div class="main-1-2">6号</div>
                 </div>
                 <div class="main-1-invisible-2">
                     <img src="./img/1.png" alt="">
@@ -309,7 +318,7 @@
             <div class="main-row-block">
                 <div class="main-1">
                     <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-2">7号</div>
                 </div>
                 <div class="main-1-invisible-3">
                     <img src="./img/1.png" alt="">
@@ -321,7 +330,7 @@
             <div class="main-row-block">
                 <div class="main-1">
                     <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-2">8号</div>
                 </div>
                 <div class="main-1-invisible-3">
                     <img src="./img/1.png" alt="">
@@ -333,7 +342,7 @@
             <div class="main-row-block">
                 <div class="main-1">
                     <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-2">9号</div>
                 </div>
                 <div class="main-1-invisible-3">
                     <img src="./img/1.png" alt="">
@@ -347,7 +356,7 @@
             <div class="main-row-block">
                 <div class="main-1">
                     <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-2">10号</div>
                 </div>
                 <div class="main-1-invisible-3">
                     <img src="./img/1.png" alt="">
@@ -359,7 +368,7 @@
             <div class="main-row-block">
                 <div class="main-1">
                     <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-2">11号</div>
                 </div>
                 <div class="main-1-invisible-3">
                     <img src="./img/1.png" alt="">
@@ -371,7 +380,7 @@
             <div class="main-row-block">
                 <div class="main-1">
                     <div class="main-1-1">水民</div>
-                    <div class="main-1-2">1</div>
+                    <div class="main-1-2">12号</div>
                 </div>
                 <div class="main-1-invisible-3">
                     <img src="./img/1.png" alt="">
@@ -383,9 +392,9 @@
         </div>
     </div>
     <div class="footer">
-        <div class="submit">
+        <a href="https://neufert.github.io/css_xiaocao/css_7/css_7_3.html" class="submit">
             投死
-        </div>
+        </a>
     </div>
 </body>
 </html>

@@ -21,7 +21,7 @@
             width: 100vw;
             height: 10vh;
             border-bottom: solid .2px #ffffff;
-            background-color: #55a8b3;
+            background-color: #29bde0;
             color: #ffffff;
             padding: 0 5vw;
             font-size: 1.5rem;
@@ -40,9 +40,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 55vh;
+            height: 60vh;
             width: 100%;
-            background-color: #55a8b3;
+            padding-top: 50px;
+            background-color: #29bde0;
         }
         .main-2{
             display: flex;
@@ -74,11 +75,15 @@
             color: #a6a6a6;
         }
         .text-yellow{
-            width: 70%;
-            color: orange;
+            width: 80%;
+            color: #ffc865;
             font-size: 1.2rem;
             font-weight: 700;
             text-align: justify;
+        }
+        .text-white{
+            margin-top: 1rem;
+            color: #ffffff;
         }
         footer{
             position: fixed;
@@ -90,7 +95,7 @@
             box-sizing: border-box;
             width: 100%;
             height: 12vh;
-            background-color: rgba(0, 0, 0, 0.5)
+            background-color: rgba(153, 223, 240, 0.5)
         }
         .button{
             box-sizing: border-box;
@@ -101,7 +106,7 @@
             border-radius: 10px;
             text-align: center;
             color: #ffffff;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         .red{
             background-color: #e26163;
@@ -109,6 +114,8 @@
         .orange{
             background-color: #fbb435;
         }
+        a:-webkit-any-link {
+            text-decoration: none;
     </style>
 </head>
 <body>
@@ -124,6 +131,16 @@
             <div class="text-yellow">
                 太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！
             </div>
+            <div class="text-white">
+                <div>本次游戏共计用时0小时25分钟</div>
+                <div>杀&nbsp;&nbsp;&nbsp;&nbsp;手0人&nbsp;&nbsp;&nbsp;&nbsp;警&nbsp;&nbsp;&nbsp;&nbsp;察1人&nbsp;&nbsp;&nbsp;&nbsp;平&nbsp;&nbsp;&nbsp;&nbsp;民6人</div>
+                <div>狙击手0人&nbsp;&nbsp;&nbsp;&nbsp;医&nbsp;&nbsp;&nbsp;&nbsp;生6人</div>
+                <div>卧底词汇：爱新觉罗</div>
+                <div>水民词汇：努尔哈赤</div>
+            </div>
+
+            </div>
+
         </div>
 
         <div class="main-2">
@@ -163,9 +180,9 @@
     </main>
 
     <footer>
-        <div class="button red">
+        <a href="https://neufert.github.io/css_xiaocao/css_7/css_7_1.html" class="button red">
             再来一局
-        </div>
+        </a>
         <div class="button orange">
             上传并分享
         </div>
