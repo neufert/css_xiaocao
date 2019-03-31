@@ -1,0 +1,32 @@
+.navbar{
+    padding: 0;
+}
+.container-navbar.no-1{
+    width: 100%;
+    padding: 0 10vw;
+}
+.navbar-brand{
+    color: #29b078;
+    font-size: 0.8rem;
+}
+.container-navbar.no-2{
+    width: 100%;
+    padding: 0 10vw;
+    background-color: #29b078;
+}
+.container-navbar.no-2 a{
+    color: #ffffff;
+}
+.jumbotron{
+    background-color: #7d7d7d;
+}
+.jumbotron .container{
+    width: 100%;
+    margin: 0 10vw;
+    padding: 0;
+}
+.jumbotron p{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 800;
+}
