@@ -9,6 +9,10 @@
     color: #29b078;
     font-size: 0.8rem;
 }
+.contact{
+    width: 12vw;
+    padding: 0 1rem;
+}
 .container-navbar.no-2{
     width: 100%;
     padding: 0 10vw;
@@ -29,4 +33,174 @@
     color: #ffffff;
     font-size: 2rem;
     font-weight: 800;
+}
+.carousel-caption{
+    height: 55%;
+}
+.container-carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.text-large{
+    font-size: 3rem;
+}
+.text-middle{
+    font-size: 2rem;
+}
+body{
+    background-color: #fafafa;
+}
+.main{
+    width: 100%;
+    padding: 0 10vw 10vw 10vw;
+}
+.main .container{
+    margin-top: 5vh;
+}
+.col .row{
+    justify-content: center;
+    margin: 1vh .5vw 0 .5vw;
+    /*background-color: beige;*/
+}
+.col .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.pt-50{
+    padding-top: 50px;
+}
+span{
+    display: block;
+    background: url("./img/css_sprites.png");
+}
+p{
+    margin: 0;
+}
+.bg-1 {
+    width: 16px; height: 14px;
+    background-position: -10px -43px;
+}
+.bg-2 {
+    width: 14px; height: 14px;
+    background-position: -10px -77px;
+}
+.bg-3 {
+    width: 16px; height: 14px;
+    background-position: -10px -111px;
+}
+.bg-4 {
+    width: 43px; height: 62px;
+    background-position: -10px -338px;
+}
+.bg-5 {
+    width: 60px; height: 62px;
+    background-position: -10px -185px;
+}
+.bg-6 {
+    width: 52px; height: 62px;
+    background-position: -10px -260px;
+}
+.bg-7 {
+    width: 13px; height: 13px;
+    margin-right: 10px;
+    background-position: -10px -10px;
+}
+.bg-8 {
+    width: 32px; height: 30px;
+    margin-top: 1vh;
+    background-position: -10px -145px;
+}
+.bg-9 {
+    width: 125px; height: 125px;
+    background-position: -10px -901px;
+}
+.bg-10 {
+    width: 125px; height: 125px;
+    background-position: -10px -1049px;
+}
+.bg-11 {
+    width: 125px; height: 125px;
+    background-position: -10px -1362px;
+}
+.bg-12 {
+    width: 125px; height: 125px;
+    background-position: -10px -616px;
+}
+.bg-13 {
+    width: 100px; height: 100px;
+    background-position: -10px -1543px;
+}
+.bg-14 {
+    width: 100px; height: 100px;
+    background-position: -10px -1205px;
+}
+.bg-15 {
+    width: 120px; height: 100px;
+    background-position: -10px -410px;
+}
+.bg-16 {
+    width: 100px; height: 100px;
+    background-position: -10px -1747px;
+}
+.bg-17 {
+    width: 100px; height: 100px;
+    background-position: -10px -757px;
+}
+h6{
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    padding-top: 5vh;
+}
+div.border{
+    height: 2rem;
+    width: 2rem;
+}
+div.border.border-success{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+}
+.text-secondary{
+    font-size: .8rem;
+}
+div.col-3,
+div.text-secondary{
+    padding: 0;
+}
+.container-2 .row{
+    height: 10vh;
+}
+.container-3 .row .col{
+    background-color: #ffffff;
+    margin: 0 1vw;
+    padding: 1rem;
+}
+.container-4{
+    width: 100%;
+}
+.container-4 .row{
+    height: 15vh;
+    width: 100%;
+    margin: 0;
+}
+.container-5{
+    width: 100%;
+    background-color: #ffffff;
+}
+.container-5 .row .col ul,
+.container-5 .row .col{
+    padding: 0;
+    font-size: .6rem;
+}
+.container-5 .row .col ul{
+    margin-left: 30px;
+}
+.container-6{
+    height: 20vh;
+    width: 100%;
+    background-color: #29b078;
 }
