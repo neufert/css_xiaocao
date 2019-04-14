@@ -1,0 +1,118 @@
+.navbar{
+    padding: 0;
+}
+.nav-link{
+    padding: .5rem;
+}
+.container-navbar.no-1{
+    width: 100%;
+    padding: 0 10vw;
+}
+.navbar-brand{
+    color: #29b078;
+    font-size: 0.8rem;
+}
+.contact{
+    width: 12vw;
+    padding: 0 1rem;
+}
+.container-navbar.no-2{
+    width: 100%;
+    padding: 2vh 10vw;
+    background-color: #29b078;
+}
+.container-navbar.no-2 a{
+    color: #ffffff;
+}
+
+.text-large{
+    font-size: 3rem;
+}
+.text-middle{
+    font-size: 2rem;
+}
+body{
+    background-color: #fafafa;
+}
+.main{
+    width: 100%;
+    padding: 0 10vw 10vw 10vw;
+}
+.row{
+    margin: 0;
+}
+.col.bg-white.shadow-sm{
+    margin: .5rem;
+    border-radius: 5px;
+    padding: .5rem;
+}
+a{
+    color: #000;
+}
+.main .col{
+    padding: 0;
+    margin: 0;
+}
+span{
+    display: block;
+    background: url("./img/css_sprites.png");
+}
+.bg-1 {
+    width: 16px; height: 14px;
+    background-position: -10px -43px;
+}
+.bg-2 {
+    width: 14px; height: 14px;
+    background-position: -10px -77px;
+}
+.bg-3 {
+    width: 16px; height: 14px;
+    background-position: -10px -111px;
+}
+.bg-18 {
+    width: 92px; height: 100px;
+    background-position: -10px -488px;
+}
+.bg-22{
+    width: 120px; height: 60px;
+    background-position: -10px -1637px;
+}
+.bg-31{
+    width: 90px; height: 90px;
+    background-position: -187px -10px;
+    margin: .5rem;
+}
+h6{
+    margin: 2vh 0;
+    padding-bottom: 2vh;
+    border-bottom: #d0d6d9 1px solid;
+}
+.container-menu{
+    padding: .5rem 0;
+    border-bottom: #d0d6d9 1px solid;
+}
+div.border.border-success{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+}
+.text-secondary{
+    font-size: .8rem;
+}
+.container-6{
+    height: 20vh;
+    width: 100%;
+    padding: 3vh 10vw;
+    background-color: #29b078;
+    font-size: .7rem;
+}
+.container-6>.row{
+    height: 50%;
+}
+.container-6 .col,
+.container-6 .col-6{
+    padding: 0;
+}
+.copyright{
+    margin-top: 3rem;
+}
