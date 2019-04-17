@@ -2,8 +2,11 @@
     padding: 0;
 }
 .nav-link{
-    padding: .5rem;
+    padding: 0 .5rem;
 }
+/*.job{
+    border-bottom: #fafafa 2px solid;
+}*/
 .container-navbar.no-1{
     width: 100%;
     padding: 0 10vw;
@@ -46,6 +49,12 @@ body{
     border-radius: 5px;
     padding: .5rem;
 }
+.col.bg-white.shadow-sm>.row{
+    border-top: .5px #edf1f2 solid;
+}
+.right-border{
+    border-right: .5px #edf1f2 solid;
+}
 a{
     color: #000;
 }
@@ -56,6 +65,9 @@ a{
 span{
     display: block;
     background: url("./img/css_sprites.png");
+}
+.bg-0{
+    background: none;
 }
 .bg-1 {
     width: 16px; height: 14px;
@@ -81,6 +93,11 @@ span{
     width: 90px; height: 90px;
     background-position: -187px -10px;
     margin: .5rem;
+}
+.bg-32{
+    width: 16px; height: 16px;
+    background-position: -187px -114px;
+    margin: 0 5px;
 }
 h6{
     margin: 2vh 0;
