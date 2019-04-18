@@ -2,26 +2,37 @@
     padding: 0;
 }
 .nav-link{
-    padding: 0 .5rem;
+    padding: .5rem;
 }
-/*.job{
-    border-bottom: #fafafa 2px solid;
-}*/
+ul{
+    height: 100%;
+}
 .container-navbar.no-1{
     width: 100%;
     padding: 0 10vw;
+}
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+}
+.job{
+    border-bottom: 5px solid #ffffff;
+    margin-top: 5px;
 }
 .navbar-brand{
     color: #29b078;
     font-size: 0.8rem;
 }
 .contact{
-    width: 12vw;
+    width: 9vw;
     padding: 0 1rem;
 }
 .container-navbar.no-2{
     width: 100%;
-    padding: 2vh 10vw;
+    padding: 0 10vw;
     background-color: #29b078;
 }
 .container-navbar.no-2 a{
@@ -44,23 +55,26 @@ body{
 .row{
     margin: 0;
 }
-.col.bg-white.shadow-sm{
-    margin: .5rem;
+.bg-white.shadow-sm{
+    margin: 1rem .5rem 1rem .5rem;
     border-radius: 5px;
     padding: .5rem;
 }
-.col.bg-white.shadow-sm>.row{
-    border-top: .5px #edf1f2 solid;
+.bg-white.shadow-sm>.row{
+    border-top: 1px #edf1f2 solid;
+/*    padding: .5rem 0;*/
+}
+.bg-white.shadow-sm>.row>.col{
+    padding: .5rem;
+}
+.bg-white.shadow-sm .col{
+    padding: 0;
 }
 .right-border{
-    border-right: .5px #edf1f2 solid;
+    border-right: 1px #edf1f2 solid;
 }
 a{
     color: #000;
-}
-.main .col{
-    padding: 0;
-    margin: 0;
 }
 span{
     display: block;
@@ -97,7 +111,7 @@ span{
 .bg-32{
     width: 16px; height: 16px;
     background-position: -187px -114px;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 h6{
     margin: 2vh 0;

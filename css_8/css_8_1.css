@@ -5,18 +5,33 @@
     width: 100%;
     padding: 0 10vw;
 }
+ul{
+    height: 100%;
+}
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+}
+.home{
+    border-bottom: 5px solid #ffffff;
+    margin-top: 5px;
+}
 .navbar-brand{
     color: #29b078;
     font-size: 0.8rem;
 }
 .contact{
-    width: 12vw;
+    width: 9vw;
     padding: 0 1rem;
 }
 .container-navbar.no-2{
     width: 100%;
     padding: 0 10vw;
     background-color: #29b078;
+    height: 4rem;
 }
 .container-navbar.no-2 a{
     color: #ffffff;
