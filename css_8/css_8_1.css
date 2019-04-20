@@ -71,8 +71,27 @@ body{
     width: 100%;
     padding: 0 10vw 10vw 10vw;
 }
-.main .container{
+.ruhexuexi>div>div{
+    margin-right: 10px;
+}
+.ruhexuexi{
+    margin-bottom: 1vh;
+}
+.number{
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #29b078;
+    line-height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50px;
+}
+.container{
     margin-top: 5vh;
+}
+.container>div>div{
+    margin-bottom: 2vh;
 }
 .col .row{
     justify-content: center;
@@ -95,16 +114,16 @@ p{
     margin: 0;
 }
 .bg-1 {
-    width: 16px; height: 14px;
-    background-position: -10px -43px;
+    width: 26px; height: 26px;
+    background-position: -5px -38px;
 }
 .bg-2 {
-    width: 14px; height: 14px;
-    background-position: -10px -77px;
+    width: 26px; height: 26px;
+    background-position: -5px -72px;
 }
 .bg-3 {
-    width: 16px; height: 14px;
-    background-position: -10px -111px;
+    width: 26px; height: 26px;
+    background-position: -5px -105px;
 }
 .bg-4 {
     width: 43px; height: 62px;
@@ -189,13 +208,16 @@ div.col-3,
 div.text-secondary{
     padding: 0;
 }
-.container-2 .row{
-    height: 10vh;
+.container-3>.row>div{
+    margin-bottom: 1vh;
 }
-.container-3 .row .col{
+.container-3>.row>div>div{
     background-color: #ffffff;
-    margin: 0 1vw;
-    padding: 1rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container-3>.row>div>div>*{
+    margin: 10px 0;
 }
 .container-4{
     width: 100%;
