@@ -16,6 +16,12 @@
     width: 5rem;
     height: 100%;
 }
+.nav-item.nav-link.text-white{
+    border-bottom: #29b078 5px solid;
+}
+.nav-item.nav-link.text-white:hover{
+    border-bottom: #ffffff 5px solid;
+}
 .home{
     border-bottom: 5px solid #ffffff;
     padding-top: 5px;
