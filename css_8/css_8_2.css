@@ -1,11 +1,11 @@
-.navbar{
-    padding: 0;
-}
 ul{
     height: 100%;
 }
 .container-navbar.no-1{
     width: 100%;
+    padding: 0 10vw;
+}
+.navbar{
     padding: 0 10vw;
 }
 .nav-item{
@@ -14,6 +14,12 @@ ul{
     justify-content: center;
     align-items: center;
     width: 5rem;
+}
+.nav-item.nav-link.text-white{
+    border-bottom: #29b078 5px solid;
+}
+.nav-item.nav-link.text-white:hover{
+    border-bottom: #ffffff 5px solid;
 }
 .home{
     border-bottom: 5px solid #ffffff;
@@ -24,7 +30,6 @@ ul{
     font-size: 0.8rem;
 }
 .contact{
-    width: 9vw;
     padding: 0 1rem;
 }
 .container-navbar.no-2{
@@ -54,29 +59,21 @@ body{
     width: 100%;
     padding: 0 10vw 10vw 10vw;
 }
-.main .col-3,
-.main .col{
-    background-color: #ffffff;
+.section-1>div,
+.section-2>div{
+    margin-bottom: 1vh;
     border-radius: 5px;
-    margin-right: 1vw;
-    padding: 0;
-}
-.col-3{
-    height: 50rem;
-}
-.main .col-3>.row,
-.main .col>.row{
-    padding: 3vh 12% 3vh 12%;
+    padding: 4rem 2rem;
 }
 .company-intro{
     border-bottom: #fafafa 2px solid;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 .tudou-intro{
     border-bottom: #fafafa 2px solid;
-}
-.main .col{
-    padding: 0;
-    margin: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 .main .col{
     color: #999999;
@@ -110,16 +107,16 @@ p{
     margin: 0;
 }
 .bg-1 {
-    width: 16px; height: 14px;
-    background-position: -10px -43px;
+    width: 26px; height: 26px;
+    background-position: -5px -38px;
 }
 .bg-2 {
-    width: 14px; height: 14px;
-    background-position: -10px -77px;
+    width: 26px; height: 26px;
+    background-position: -5px -72px;
 }
 .bg-3 {
-    width: 16px; height: 14px;
-    background-position: -10px -111px;
+    width: 26px; height: 26px;
+    background-position: -5px -105px;
 }
 .bg-4 {
     width: 43px; height: 62px;
@@ -195,7 +192,8 @@ p{
     background-image: url("./img/20.png");
     background-size: cover;
     margin: 0;
-    height: 20vh;
+    width: 100%;
+    height: auto;
 }
 h6{
     margin: 2vh 0;
@@ -238,18 +236,9 @@ div.border.border-success{
     margin-left: 30px;
 }
 .container-6{
-    height: 20vh;
-    width: 100%;
     padding: 3vh 10vw;
     background-color: #29b078;
     font-size: .7rem;
-}
-.container-6>.row{
-    height: 50%;
-}
-.container-6 .col,
-.container-6 .col-6{
-    padding: 0;
 }
 .copyright{
     margin-top: 3rem;
