@@ -5,41 +5,34 @@ ul{
     width: 100%;
     padding: 0 10vw;
 }
-.navbar{
-    padding: 0 10vw;
+/*green navbar*/
+.collapse{
+    height: 100%;
 }
-.nav-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
+.navbar-nav{
+    height: 100%;
 }
 .nav-item.nav-link.text-white{
-    border-bottom: #29b078 5px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid #29b078;
 }
 .nav-item.nav-link.text-white:hover{
-    border-bottom: #ffffff 5px solid;
+    border-bottom: #ffffff 2px solid;
 }
-.home{
-    border-bottom: 5px solid #ffffff;
-    margin-top: 5px;
+nav.d-flex{
+    padding: 0 10vw;
+}
+nav.navbar{
+    padding: 0;
 }
 .navbar-brand{
     color: #29b078;
     font-size: 0.8rem;
 }
-.contact{
-    padding: 0 1rem;
-}
-.container-navbar.no-2{
-    width: 100%;
-    padding: 0 10vw;
-    background-color: #29b078;
-}
-.container-navbar.no-2 a{
-    color: #ffffff;
-}
+/*green navbar*/
 .container-carousel{
     display: flex;
     flex-direction: row;
@@ -63,7 +56,7 @@ body{
 .section-2>div{
     margin-bottom: 1vh;
     border-radius: 5px;
-    padding: 4rem 2rem;
+    padding: 2.5rem 2rem;
 }
 .company-intro{
     border-bottom: #fafafa 2px solid;
@@ -75,13 +68,10 @@ body{
     margin-bottom: 2rem;
     padding-bottom: 2rem;
 }
-.main .col{
-    color: #999999;
-}
 .dot{
     width: 1rem;
     height: 1rem;
-    margin: 0 .5rem 0 3rem;
+    margin: 0 .5rem 0 25%;
 }
 .main .container{
     margin-top: 5vh;
@@ -222,24 +212,17 @@ div.border.border-success{
     width: 100%;
     margin: 0;
 }
-.container-5{
-    width: 100%;
-    padding: 0 10vw;
-    background-color: #ffffff;
-}
-.container-5 .row .col ul,
-.container-5 .row .col{
-    padding: 0;
-    font-size: .6rem;
-}
-.container-5 .row .col ul{
-    margin-left: 30px;
-}
-.container-6{
-    padding: 3vh 10vw;
+footer{
     background-color: #29b078;
     font-size: .7rem;
 }
+.container-6{
+    padding: 3vh 10vw;
+}
+.container-6 .underline:hover{
+    text-decoration: underline;
+}
 .copyright{
-    margin-top: 3rem;
+    margin-top: 1rem;
+    border-top: #ffffff 1px solid;
 }
