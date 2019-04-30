@@ -191,6 +191,9 @@ body{
 a{
     color: #000;
 }
+p{
+    margin-bottom: 0;
+}
 span{
     display: block;
     background: url("./img/css_sprites.png");
