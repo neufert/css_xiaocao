@@ -5,6 +5,25 @@ ul{
     width: 100%;
     padding: 0 10vw;
 }
+.container-nacbar.no-1.phone{
+    padding: 0 10vw;
+}
+@media (max-width:768px){
+    .container-navbar.no-1{
+        display: none;
+    }
+    .container-nacbar.no-1.phone{
+        display: block;
+    }
+}
+@media (min-width:768px){
+    .container-navbar.no-1{
+        display: block;
+    }
+    .container-nacbar.no-1.phone{
+        display: none;
+    }
+}
 /*green navbar*/
 .collapse{
     height: 100%;
