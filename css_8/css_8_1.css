@@ -245,6 +245,7 @@ div.text-secondary{
 }
 .container-4>.row>div>div{
     margin-bottom: 1vh;
+    height: 150px;
 }
 .container-4>.row>div>div:hover{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
