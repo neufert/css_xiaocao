@@ -115,6 +115,18 @@ span{
 p{
     margin: 0;
 }
+.text-green{
+    color: #29b078;
+}
+.selector-1:hover{
+    cursor: pointer;
+}
+.selector-1:hover .dot{
+    background-color: #ffc107;
+}
+.selector-1:hover .text-green{
+    color: #ffc107;
+}
 .bg-1 {
     width: 26px; height: 26px;
     background-position: -5px -38px;
