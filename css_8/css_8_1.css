@@ -21,6 +21,12 @@
         display: none;
     }
 }
+@media (min-width: 992px){
+    .pt-30{
+        margin-top: 30px;
+        border-left: 1px dashed #dedede;
+    }
+}
 .container-navbar ul{
     height: 100%;
 }
@@ -107,7 +113,6 @@ body{
 }
 .pt-30{
     margin-top: 30px;
-    border-left: 1px dashed #dedede;
 }
 span{
     display: block;
