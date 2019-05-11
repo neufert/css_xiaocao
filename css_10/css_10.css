@@ -1,6 +1,20 @@
 .btn-white{
     background-color: #ffffff;
-    margin-left: 2rem;
+    margin: 0 1.5rem;
+}
+.navbar-nav>a:hover {
+    background: #1d7ad9;
+    color: #ffffff !important;
+}
+.font-small{
+    font-size: .8rem;
+}
+.form-corner{
+    border-radius: 5px;
+}
+.bg-f3f3f3{
+    background-color: #f3f3f3;
+    color: #1d7ad9;
 }
 .icon-1{
     position: absolute;
@@ -16,11 +30,39 @@
     background-color: #cccccc;
     color: #ffffff;
 }
+.icon-3{
+    color: #cccccc;
+}
+.selector-1:hover{
+    cursor: pointer;
+}
 .selector-1:hover .icon-1{
     background-color: #ffa500;
 }
 .selector-1:hover .icon-2{
     background-color: #ffa500;
+}
+.selector-1:hover .icon-3{
+    color: #ffa500;
+}
+.selector-2{
+    padding: .2rem 1rem;
+    cursor: pointer;
+    border: #ffffff .5px solid;
+}
+.selector-2:hover{
+    background: #ffffff;
+    color: #000000;
+}
+@media (max-width: 720px){
+    .selector-3{
+        padding: 0 15px;
+    }
+}
+@media (min-width: 991px){
+    .selector-4{
+        padding-right: 4rem;
+    }
 }
 .title-1{
     height: 1.2rem;
@@ -30,6 +72,10 @@
 }
 input[type='radio']{
     -webkit-appearance: none;
+    border: none;
+}
+input[type='text']{
+    margin: 0 .5rem;
 }
 label{
     margin: 0;
@@ -37,7 +83,7 @@ label{
 .radio-custom{
     height: 1rem;
     width: 1rem;
-    border: #999999 1px solid;
+    border: #d6d6d6 1px solid;
     border-radius: 50%;
     margin-right: .5rem;
 }
@@ -57,7 +103,9 @@ select{
     -webkit-appearance: none;
     border: none;
     outline: none;
-    width: 6rem;
+    width: 6.5rem;
+    height: 2rem;
+    padding-left: .5rem;
 }
 .select:before{
     content: '';
@@ -82,18 +130,22 @@ select{
     top: 50%;
     transform: translateY(-50%);
 }
-/*
-
-.select{
-    width: 10rem;
-    border: 1px #1d7ad9 solid;
+.bg-box {
+    width: 19px; height: 15px;
+    background: url('css_10.png') -10px -10px;
 }
-.arrow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #1d7ad9;
-    width: 50px;
-    height: 100%;
-    border: 1px black solid;
-}*/
+.bg-ruler {
+    width: 22px; height: 20px;
+    background: url('css_10.png') -10px -45px;
+}
+.bg-scissors {
+    width: 15px; height: 20px;
+    background: url('css_10.png') -10px -85px;
+}
+.bg-qrcode {
+    width: 92px; height: 92px;
+    background: url('css_10.png') -10px -125px;
+}
+.link-hover:hover{
+    color: #1d7ad9;
+}
