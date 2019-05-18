@@ -12,16 +12,13 @@ header {
   left: 0; }
 
 ul {
-  padding: 0 25px;
-  margin: 1rem 0 0 0; }
-
-li {
-  list-style-type: none; }
-
-ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0 25px;
+  margin: 1rem 0 0 0; }
+  ul li {
+    list-style-type: none; }
 
 img {
   width: auto;
