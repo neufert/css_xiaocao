@@ -26,36 +26,44 @@ ul{
 li{
   list-style-type: none;
 }
-.column{
-  @include flexbox(column);
-}
-.space-between{
+ul {
   @include flexbox(row);
   justify-content: space-between;
 }
-.row{
-  @include flexbox(row);
-}
-.login{
-  @include size(100vw, 3rem);
-  align-items: center;
-  margin-bottom: 0.5rem;
-  background-color: #ffffff;
-}
-button{
-  background-color: $main-color;
-  @include size(100%, 3rem);
-  margin: 1vh 0;
-  border: 0;
-  font-size: 1rem;
-}
-.container1{
-  margin-top: 3.6rem;
-}
+
 img{
   @include size(auto, 20px);
   margin: 0 25px;
   flex-shrink: 0;
+}
+body{
+  div{
+    @include flexbox(column);
+    div{
+      @include flexbox(column);
+      margin-top: 3.6rem;
+      form{
+        @include flexbox(row);
+        @include size(100vw, 3rem);
+        align-items: center;
+        margin-bottom: 0.5rem;
+        background-color: #ffffff;
+      }
+      button{
+        border:0;
+        background-color: $main-color;
+        color: #ffffff;
+        margin-top: 1.5rem;
+        @include size(100%, 3rem);
+        font-size: 1rem;
+      }
+      a{
+        color: $main-color;
+        padding: 1vh 25px;
+        text-align: right;
+      }
+    }
+  }
 }
 input{
   border: 0;
@@ -72,19 +80,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 ::placeholder{
   color: #e5e8ea;
-}
-button{
-  border:0;
-  height:3rem;
-  background-color: $main-color;
-  color: #ffffff;
-  margin-top: 1.5rem;
-}
-.right{
-  color: $main-color;
-  margin: 0;
-  padding: 0 25px;
-  text-align: right;
 }
 .bold{
   font-weight: bold;
