@@ -9,25 +9,53 @@
     <link rel="stylesheet" href="css_11.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <header>
-            <ul>
-                <li>关闭</li>
-                <li class="bold">登陆</li>
-                <li>注册</li>
-            </ul>
+            <span class="bg-cancel"></span>
+            <div>登陆</div>
         </header>
-        <div>
+        <div class="form">
             <form>
-                <img src=".\img\iphone.png">
+                <span class="bg-iphone"></span>
                 <input type="text" oninput = "value=value.replace(/[^\d]/g,'')" placeholder="请输入手机号" maxlength="11">
             </form>
             <form>
-                <img src=".\img\locked.png">
+                <span class="bg-safe"></span>
                 <input type="password" placeholder="请输入密码" maxlength="20">
             </form>
             <button>登陆</button>
-            <a>忘记密码？</a>
+            <div class="between">
+                <a>立即注册</a>
+                <a>忘记密码？</a>
+            </div>
+            <div class="justify-content-center">
+                <div class="deco"></div>
+                <div>第三方账号登陆</div>
+                <div class="deco"></div>
+            </div>
+            <div class="center">
+                <div>
+                    <span class="bg-weixin"></span>
+                    <div>
+                        微信登陆
+                    </div>
+                </div>
+                <div>
+                    <span class="bg-weibo"></span>
+                    <div>
+                        微博登陆
+                    </div>
+                </div>
+                <div>
+                    <span class="bg-qq"></span>
+                    <div>
+                        QQ登陆
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
         </div>
     </div>
 </body>

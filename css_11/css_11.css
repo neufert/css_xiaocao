@@ -1,58 +1,80 @@
-body {
-  margin: 0;
-  background-color: #eff0f4; }
-
-header {
-  background-color: #5fc0cd;
-  width: 100vw;
-  height: 3.2rem;
-  color: #ffffff;
-  position: fixed;
-  top: 0;
-  left: 0; }
-
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 25px;
-  margin: 1rem 0 0 0; }
-  ul li {
-    list-style-type: none; }
-
 img {
   width: auto;
   height: 20px;
   margin: 0 25px;
   flex-shrink: 0; }
 
-body div {
+body {
+  margin: 0;
   display: flex;
-  flex-direction: column; }
-  body div div {
+  flex-direction: row;
+  justify-content: center; }
+  body div.container {
+    width: 100%;
+    max-width: 780px;
     display: flex;
-    flex-direction: column;
-    margin-top: 3.6rem; }
-    body div div form {
+    flex-direction: column; }
+    body div.container header {
       display: flex;
       flex-direction: row;
-      width: 100vw;
-      height: 3rem;
+      justify-content: flex-start;
       align-items: center;
-      margin-bottom: 0.5rem;
-      background-color: #ffffff; }
-    body div div button {
-      border: 0;
-      background-color: #5fc0cd;
-      color: #ffffff;
-      margin-top: 1.5rem;
+      box-sizing: border-box;
+      padding-left: 20px;
+      background-color: #1ba2ea;
       width: 100%;
-      height: 3rem;
-      font-size: 1rem; }
-    body div div a {
-      color: #5fc0cd;
-      padding: 1vh 25px;
-      text-align: right; }
+      height: 3.2rem; }
+      body div.container header div {
+        color: #ffffff; }
+    body div.container div.form {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      height: 90vh;
+      background-color: #eff0f4; }
+      body div.container div.form form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 3rem;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        background-color: #ffffff; }
+      body div.container div.form button {
+        border: 0;
+        background-color: #1ba2ea;
+        color: #ffffff;
+        margin: 1rem;
+        border-radius: 10px;
+        width: auto;
+        height: 3rem;
+        font-size: 1rem; }
+      body div.container div.form div.between {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 100%;
+        height: 2rem;
+        padding: 0 1rem; }
+        body div.container div.form div.between a {
+          color: #999999; }
+      body div.container div.form div.justify-content-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 4rem;
+        color: #000000; }
+      body div.container div.form div.center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        body div.container div.form div.center div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 2rem .3rem; }
 
 input {
   border: 0;
@@ -69,9 +91,45 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; }
 
 ::placeholder {
-  color: #e5e8ea; }
+  color: #999999; }
 
-.bold {
-  font-weight: bold; }
+.bg-cancel {
+  width: 25px;
+  height: 25px;
+  background: url("css_sprites.png") -10px -10px;
+  margin-right: 2rem; }
+
+.bg-iphone {
+  width: 30px;
+  height: 40px;
+  background: url("css_sprites.png") -10px -114px;
+  margin: 0 1rem; }
+
+.bg-safe {
+  width: 30px;
+  height: 32px;
+  background: url("css_sprites.png") -10px -62px;
+  margin: 0 1rem; }
+
+.bg-qq {
+  width: 48px;
+  height: 48px;
+  background: url("css_sprites.png") -10px -238px; }
+
+.bg-weibo {
+  width: 48px;
+  height: 48px;
+  background: url("css_sprites.png") -10px -306px; }
+
+.bg-weixin {
+  width: 48px;
+  height: 48px;
+  background: url("css_sprites.png") -10px -374px; }
+
+.deco {
+  margin: 10px;
+  width: 80px;
+  height: .5px;
+  border: 0.5px solid #999999; }
 
 /*# sourceMappingURL=css_11.css.map */
