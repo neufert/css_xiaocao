@@ -29,17 +29,12 @@ body{
 .text-small{
   font-size: .7rem;
 }
-body{
-  @include flexbox(row);
-  justify-content: center;
-  .container-1{
-    width: 100%;
-    max-width: 780px;
-    box-sizing: border-box;
-  }
-  .header1{
-    position: fixed;
-    top: 0;
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 780px;
+  .row-1{
     height: 8vh;
     background-color: $main-color;
     @include flexbox(row);
@@ -47,38 +42,44 @@ body{
     align-items: center;
     padding: 0 1.5rem;
   }
-  .header2{
-    position: fixed;
+  .row-2{
     @include flexbox(row);
-    top: 8vh;
     height: 6vh;
     border-bottom: $border-color solid .5px;
-  }
-  .list{
-    margin-top: 14vh;
-    .list-end{
-      height: 10vh;
+    .select{
+      flex: 1;
+      border: $border-color solid .5px;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
     }
   }
-  footer{
-    position: fixed;
-    bottom: 0;
-    @include flexbox(row);
-    height: 10vh;
-    background-color: #eff0f4;
-    text-align: center;
+}
+footer{
+  width: 100%;
+  max-width: 780px;
+  position: fixed;
+  bottom: 0;
+  @include flexbox(row);
+  height: 10vh;
+  background-color: #eff0f4;
+  text-align: center;
+}
+body{
+  @include flexbox(row);
+  justify-content: center;
+  .container-main{
+    width: 100%;
+    max-width: 780px;
+    box-sizing: border-box;
+    .list{
+      margin-top: 14vh;
+      .list-end{
+        height: 10vh;
+      }
+    }
   }
 }
-
-
-.select{
-  flex: 1;
-  border: $border-color solid .5px;
-  justify-content: center;
-  align-items: center;
-  background: #ffffff;
-}
-
 .list-1{
   @include flexbox(column);
   padding: 8px;
@@ -110,7 +111,7 @@ body{
 .dropdown-content{
   display: none;
   position: absolute;
-  top: 6vh;
+  top: 14vh;
   width: 33%;
   border: $border-color solid .5px;
   background-color: #ffffff;
