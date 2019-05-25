@@ -42,7 +42,8 @@ header {
     header .row-2 .select {
       flex: 1;
       border: #e1e5e7 solid 0.5px;
-      justify-content: center;
+      justify-content: space-between;
+      padding-left: 10px;
       align-items: center;
       background: #ffffff; }
 
@@ -53,6 +54,7 @@ footer {
   bottom: 0;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   height: 10vh;
   background-color: #eff0f4;
   text-align: center; }
@@ -73,9 +75,8 @@ body {
 .list-1 {
   display: flex;
   flex-direction: column;
-  padding: 8px;
-  border-bottom: #e1e5e7 solid 0.5px;
-  height: 13vh; }
+  padding: 5px;
+  border-bottom: #e1e5e7 solid 0.5px; }
   .list-1 .row {
     display: flex;
     flex-direction: row;
@@ -205,9 +206,6 @@ span {
   width: 30px;
   height: 30px;
   background-position: 0 -150px; }
-
-.invisible {
-  width: 30px; }
 
 a {
   text-decoration: none; }
