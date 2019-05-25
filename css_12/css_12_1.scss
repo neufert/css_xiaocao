@@ -1,4 +1,6 @@
 $main-color: #5fc0cd;
+$border-color: #c6c6c8;
+
 @mixin flexbox($direction){
   display: flex;
   flex-direction: $direction;
@@ -18,16 +20,72 @@ body{
     }
     .container2{
       @include flexbox(row);
+      justify-content: flex-start;
+      align-items: center;
+      box-sizing: border-box;
       width: 100%; height: 30vh;
+      padding-left: 20px;
       background-image: url("./img/bg.png");
       min-width: 320px;
       background-size: 100% 100%;
       background-repeat:no-repeat;
+      img{
+        width: 100px;
+        height: auto;
+        background-color: #efefef;
+        border-radius: 50%;
+      }
+      .container2-1{
+        margin-left: 20px;
+        color: #ffffff;
+      }
+      .iconfont{
+        color: $main-color;
+      }
     }
     .container3{
       @include flexbox(column);
       width: 100%; height: 50vh;
+      .head-end{
+        @include flexbox(row);
+        align-items: center;
+        border-bottom: #e1e5e7 solid 1px;
+      }
+      .head{
+        flex: 1;
+        padding-left: 1rem;
+      }
+      .end{
+        flex: 1.8;
+        padding-left: 2rem;
+      }
+      .block{
+        @include flexbox(row);
+        align-items: center;
+        flex:1;
+        margin: 0 0 0 2rem;
+        border-bottom: #e1e5e7 solid 1px;
+        span{
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .left{
+        color: $border-color;
+      }
+      .middle{
+        width: .5px;
+        height: 30%;
+        border: .5px solid $border-color;
+        background-color: $border-color;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
     }
+  }
+  header{
+    @include flexbox(row);
+    justify-content: space-between;
   }
   footer {
     width: 100%; height: 4rem;
@@ -65,48 +123,25 @@ header{
   display: flex; justify-content: center; align-items: center;
   color: white;
   padding: 0 1rem;
+  .full-width{
+    width: 100%;
+    text-align: center;
+  }
 }
 
-.block{
-  @include flexbox(row);
-  align-items: center;
-  flex:1;
-  padding-left: 2rem;
-  border-top: #e1e5e7 solid 1px;
-}
-.block-left{
-  width: 5rem;
-  color: #999999;
-}
 .block-topleft{
   width: 4rem;
 }
-.block-right{
-  color: black;
-  border-left: #e1e5e7 solid 1px;
-  padding-left: 1rem;
-}
+
 .high{
   flex:2;
-}
-
-.row{
-  display: flex;
-  flex-direction: row;
 }
 .space-between{
   justify-content: space-between;
 }
-.full-width{
-  width: 100%;
-  text-align: center;
-}
+
 .bottom{
   width: 60%;
-}
-header img{
-  height: 15px;
-  margin-left: 1rem;
 }
 img[src="./img/star.png"]{
   width: 12px;
@@ -116,13 +151,6 @@ img[src="./img/star.png"]{
 .blueborder{
   border-left: $main-color solid 2px;
   padding-left: 1rem;
-  margin-left: -1rem;
-}
-.photo{
-  width: 100px;
-  height: auto;
-  background-color: #efefef;
-  border-radius: 50%;
 }
 .user{
   align-self: center;
@@ -139,14 +167,10 @@ img[src="./img/location.png"]{
 }
 .font-normal{
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
 }
 .font-small{
   font-size: 0.8rem;
   margin-left: 0.4rem;
-}
-.align-center{
-  align-items: center;
 }
 .red{
   color: #e26163;
@@ -164,9 +188,6 @@ img[src="./img/location.png"]{
 .iconfont{
   font-family: iconfont;
   font-size: 1em;
-}
-.blue{
-  color: $main-color;
 }
 a{
   text-decoration: none;
