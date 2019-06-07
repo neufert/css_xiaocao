@@ -1,0 +1,126 @@
+$main-color: #5fc0cd;
+@mixin flexbox($direction){
+  display: flex;
+  flex-direction: $direction;
+}
+
+html{
+  background-color: #ffffff;
+}
+body{
+  @include flexbox(row);
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 780px;
+  background-color: $main-color;
+}
+header{
+  position: fixed;
+  top: 0;
+  @include flexbox(row);
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 780px;
+  height: 8vh;
+  padding: 0 2%;
+  border-bottom: solid .2px #ffffff;
+  background-color: $main-color;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+img[src=".\img\home.png"]{
+  height: 50%;
+  width: auto;
+}
+main{
+  @include flexbox(column);
+  align-items: center;
+  margin-top: 8vh;
+  width: 100%;
+}
+.main-1{
+  @include flexbox(column);
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5vh 2vw 0 2vw;
+  background-color: $main-color;
+  .text-yellow{
+    color: #ffc865;
+    font-weight: 700;
+    text-align: justify;
+    margin-bottom: 5vh;
+  }
+  .text-white{
+    margin-top: 1rem;
+    color: #ffffff;
+  }
+}
+.main-1-1{
+  width: 80%;
+  margin: 5vh 0;
+}
+.main-2{
+  @include flexbox(column);
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1vh 2vw;
+  border-bottom: 1px solid #999999;
+  background-color: #ffffff;
+}
+.main-2-1{
+  @include flexbox(row);
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: #000000;
+}
+.blank{
+  height: 16vh;
+}
+.main-2-2{
+  width: 80%;
+  flex: 1;
+  color: #a6a6a6;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+footer{
+  @include flexbox(row);
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 780px;
+  height: 12vh;
+  background-color: rgba(41, 189, 224, 0.5);
+  .button{
+    box-sizing: border-box;
+    width: 40%;
+    max-height: 10vh;
+    padding: .6rem;
+    margin: 0 5%;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  .red{
+    background-color: #e26163;
+  }
+  .orange{
+    background-color: #fbb435;
+  }
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
