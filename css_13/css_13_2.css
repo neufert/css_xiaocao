@@ -99,7 +99,7 @@ header {
   margin-bottom: 3vh; }
   .main-row .invisible {
     display: none;
-    margin-top: 10px;
+    margin-top: 1vw;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -135,8 +135,14 @@ header {
     background-color: #83b09a;
     color: #ffffff; }
 
+.block {
+  margin-bottom: 7vw; }
+
 .block:hover .invisible {
   display: flex; }
+
+.block:hover {
+  margin-bottom: 0; }
 
 .footer {
   position: fixed;
