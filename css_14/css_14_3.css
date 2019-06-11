@@ -1,0 +1,124 @@
+ul{
+    height: 100%;
+}
+.container-navbar.no-1{
+    width: 100%;
+    padding: 0 10vw;
+}
+.container-nacbar.no-1.phone{
+    padding: 0 10vw;
+}
+
+.job{
+    border-bottom: 5px solid #ffffff;
+    margin-top: 5px;
+}
+.row{
+    margin: 0;
+}
+.container-menu .nav-link-0{
+    height: 24px;
+    margin-bottom: 8px;
+    align-self: flex-end;
+    box-sizing: border-box;
+}
+.container-menu .nav-link:hover {
+    background-color: #29b078;
+    color: #000000;
+    border-radius: 5px;
+}
+.card-custom>div{
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 2vh;
+    z-index: -1;
+}
+.card-custom>div>.row{
+    border-top: 1px #edf1f2 solid;
+}
+.card-custom>div>.row>.col{
+    padding: .5rem;
+}
+.card-custom .col{
+    padding: 0;
+}
+.right-border{
+    border-right: 1px #edf1f2 solid;
+}
+
+.invisible-custom{
+    display: none;
+    position: absolute;
+    height: 94%;
+    width: 89%;
+    background: rgb(0,0,0,.8);
+    color: #ffffff;
+    padding: 30px;
+    animation-name: flip;
+    animation-duration: 1s;
+    z-index: 1;
+    border-radius: 5px;
+}
+.card-custom:hover .invisible-custom{
+    display: block;
+}
+@keyframes flip {
+    25% {transform: scale(-1,1);}
+    50% {transform: scale(1,1);}
+    75% {transform: scale(-1,1);}
+    100% {transform: scale(1,1);}
+}
+a{
+    color: #000;
+}
+span{
+    display: block;
+    background: url("./img/css_sprites.png");
+}
+.bg-0{
+    background: none;
+}
+.bg-1 {
+    width: 26px; height: 26px;
+    background-position: -5px -38px;
+}
+.bg-2 {
+    width: 26px; height: 26px;
+    background-position: -5px -72px;
+}
+.bg-3 {
+    width: 26px; height: 26px;
+    background-position: -5px -106px;
+}
+.bg-18 {
+    width: 92px; height: 100px;
+    background-position: -10px -488px;
+}
+.bg-22{
+    width: 120px; height: 60px;
+    background-position: -10px -1637px;
+}
+.bg-31{
+    width: 90px; height: 90px;
+    background-position: -187px -10px;
+    margin: .5rem;
+}
+.bg-32{
+    width: 16px; height: 16px;
+    background-position: -187px -114px;
+    margin: 0 2px;
+}
+h6{
+    margin: 2vh 0;
+    padding: 0 15px 2vh 15px;
+    border-bottom: #d0d6d9 1px solid;
+}
+.container-menu{
+    padding: .5rem 15px;
+    border-bottom: #d0d6d9 1px solid;
+}
+div.border.border-success{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+}
