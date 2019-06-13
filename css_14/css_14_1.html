@@ -6,9 +6,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="css_14_1.css">
     <link rel="stylesheet" href="css_14_general.css">
+    <link rel="stylesheet" href="css_14_navbar.css">
 </head>
 <body>
     <div class="container-navbar no-1">
@@ -27,13 +29,14 @@
             </div>
         </div>
     </div>
-    <div class="container-nacbar no-1 phone">
+    <div class="container-navbar no-1 phone">
         <div class="d-flex justify-content-end text-success">
             登陆&nbsp;|&nbsp;注册
         </div>
     </div>
 
-    <nav class="d-flex flex-row justify-content-between" style="background-color: #29b078;">
+ <!-- bootstrap navbar
+   <nav class="d-flex flex-row justify-content-between" style="background-color: #29b078;">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
             <a class="navbar-brand" href="#">
                 <span class="bg-22"></span>
@@ -50,9 +53,21 @@
                 </div>
             </div>
         </nav>
-    </nav>
+    </nav>-->
 
-
+    <div class="row navbar-custom">
+        <div id="nav_rowcol">
+            <span class="bg-22"></span>
+            <input type="checkbox" id="switch_nav">
+            <label for="switch_nav">≡</label>
+            <ul>
+                <a href="css_14_1.html"><li>首页</li></a>
+                <a href="css_14_3.html"><li>职业</li></a>
+                <a href="css_14_2.html"><li>推荐</li></a>
+                <li>关于</li>
+            </ul>
+        </div>
+    </div>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">

@@ -9,21 +9,30 @@
         padding: 0 10vw 10vw 10vw;
     }
 }
+/*small screen below*/
 @media (max-width:768px){
+
     .container-navbar.no-1{
         display: none;
     }
-    .container-nacbar.no-1.phone{
+    .container-navbar.no-1.phone{
         display: block;
     }
+
 }
-@media (min-width:768px){
+/*large screen below*/
+@media (min-width:768px) {
     .container-navbar.no-1{
         display: block;
     }
-    .container-nacbar.no-1.phone{
+    .container-navbar.no-1.phone{
         display: none;
     }
+
+    .navbar-custom li{
+        margin: 0 .5rem;
+    }
+
 }
 @media (min-width: 992px){
     .pt-30{
@@ -90,3 +99,15 @@ footer{
 .text-middle{
     font-size: 2rem;
 }
+a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:active{
+    text-decoration:none;
+}/* 指正在点的链接*/
