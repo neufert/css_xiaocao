@@ -82,4 +82,5 @@ ul{
 
 input[type="checkbox"]{
     -webkit-appearance: none;
+    border: none;
 }
