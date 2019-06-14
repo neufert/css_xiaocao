@@ -26,7 +26,6 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-
     }
     .navbar-custom ul{
         display: flex;
@@ -36,7 +35,7 @@
     .bg-22{
         float: none;
     }
-    label{
+    #nav_rowcol label{
         display: none;
     }
 }
@@ -79,4 +78,8 @@ ul{
 
 #switch_nav:checked ~ label{
     color: #ffffff;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
 }
