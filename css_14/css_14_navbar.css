@@ -11,8 +11,9 @@
     }
     #switch_nav:checked ~ ul{
         display: block;
+        margin: 6vh 0 0 0;
     }
-    label{
+    .navbar-custom label{
         display: block;
         float: right;
     }
@@ -35,7 +36,7 @@
     .bg-22{
         float: none;
     }
-    #nav_rowcol label{
+    .navbar-custom label{
         display: none;
     }
 }
@@ -48,15 +49,14 @@
     background-color: #29b078;
 }
 
-label{
+.navbar-custom label{
     font-size: 3.5rem;
     line-height: 3rem;
     margin: 0;
     color: #ffffff;
 }
 
-ul{
-    margin: 9vh 0 0 0;
+.navbar-custom ul{
     padding: 0;
     list-style-type: none;
     color: #ffffff;
@@ -76,11 +76,8 @@ ul{
     -webkit-appearance: none;
 }
 
-#switch_nav:checked ~ label{
-    color: #ffffff;
-}
-
 input[type="checkbox"]{
     -webkit-appearance: none;
     border: none;
+    color: #ffffff;
 }
