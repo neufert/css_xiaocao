@@ -8,7 +8,10 @@
 .container-navbar ul{
     height: 100%;
 }
-
+.main{
+    width: 100%;
+    padding: 0 10vw 10vw 10vw;
+}
 .contact{
     padding: 0;
 }
