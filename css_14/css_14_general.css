@@ -1,14 +1,3 @@
-@media (max-width:376px){
-    .main {
-        padding: 0;
-    }
-}
-@media (min-width:376px){
-    .main{
-        width: 100%;
-        padding: 0 10vw 10vw 10vw;
-    }
-}
 /*small screen below*/
 @media (max-width:768px){
 
@@ -42,6 +31,12 @@
 body{
     background-color: #fafafa;
 }
+
+h6{
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /*green navbar*/
 .collapse{
     height: 100%;
