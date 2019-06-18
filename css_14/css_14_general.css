@@ -73,10 +73,7 @@ nav.navbar{
 p{
     margin: 0;
 }
-.main{
-    width: 100%;
-    padding: 0 10vw 10vw 10vw;
-}
+
 footer{
     background-color: #29b078;
     font-size: .7rem;
