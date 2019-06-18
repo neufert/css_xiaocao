@@ -49,6 +49,12 @@
     background-color: #29b078;
 }
 
+.navbar-custom a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 .navbar-custom label{
     font-size: 3.5rem;
     line-height: 3rem;

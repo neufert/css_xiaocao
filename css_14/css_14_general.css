@@ -28,11 +28,9 @@
     .container-navbar.no-1.phone{
         display: none;
     }
-
     .navbar-custom li{
         margin: 0 .5rem;
     }
-
 }
 @media (min-width: 992px){
     .pt-30{
@@ -100,6 +98,11 @@ footer{
     font-size: 2rem;
 }
 a{
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+}
+footer a{
     color: #ffffff;
     text-decoration: none;
     background-color: transparent;
