@@ -1,0 +1,17 @@
+body{
+    margin: 0 30vw;
+}
+
+div {
+    border-radius: 10%;
+    width: 10vw;
+    height: 10vw;
+    background-color: orange;
+    margin: 0.5vw;
+    float: left;
+}
+button{
+    width: 80%;
+    height: 5rem;
+    background-color: orange;
+}
