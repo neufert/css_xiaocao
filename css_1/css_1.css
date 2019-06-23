@@ -6,12 +6,22 @@ div {
     border-radius: 10%;
     width: 10vw;
     height: 10vw;
-    background-color: orange;
-    margin: 0.5vw;
+    background-color: #ffa500;
+    margin: .5vw;
     float: left;
 }
 button{
     width: 80%;
-    height: 5rem;
-    background-color: orange;
+    padding: 1rem 0;
+    background-color: #ffffff;
+    color: #ffa500;
+    border-radius: 10px;
+    border: #ffa500 1px solid;
+    -webkit-appearance: none;
+    margin: .5vw;
+    outline: none;
+}
+button:hover {
+    background-color: #ffa500;
+    color: #ffffff;
 }
